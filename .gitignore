@@ -1,0 +1,41 @@
+# Node.js
+/node_modules/
+
+# Logs
+logs
+*.log
+*.log.*
+
+# Environment files
+.env
+
+# VSCode specific files
+.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# NPM Debug files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output
+/dist
+/build
+
+# Temporary files
+*.swp
+*.swo
+
+# Coverage directory used by testing tools
+/coverage
+
+# Debugger and other temporary files
+*.pid
+*.seed
+
+# Dependencies
+/package-lock.json
+/yarn.lock

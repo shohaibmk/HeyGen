@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "node": "^20.18.1",
+    "nodemon": "^3.1.7"
+  },
+  "scripts": {
+    "start": "node testServer.js",
+    "test": "mocha test/**/*.test.js"
+  },
+  "type": "module",
+  "devDependencies": {
+    "chai": "^5.1.2",
+    "mocha": "^10.8.2",
+    "supertest": "^7.0.0"
+  }
+}
