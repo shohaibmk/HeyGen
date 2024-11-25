@@ -7,7 +7,7 @@
     "nodemon": "^3.1.7"
   },
   "scripts": {
-    "start": "node testServer.js",
+    "start": "node server.js",
     "test": "mocha test/**/*.test.js"
   },
   "type": "module",
