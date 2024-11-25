@@ -9,8 +9,8 @@ import HttpClient from "./httpClient.js";
  * @param {number} [interval=1000] - Time interval (in milliseconds) between retries.
  * @returns {Promise<Object>} - The result object from the server or 'pending' if max retries are reached.
  */
-async function waitForCompletion(url, maxRetries = 10, interval = 1000) {
-    validateInputs(url,maxRetries,interval);
+async function waitForCompletion(url, maxRetries = 15, interval = 5000) {
+    validateInputs(url, maxRetries, interval);
     try {
 
 
@@ -19,7 +19,6 @@ async function waitForCompletion(url, maxRetries = 10, interval = 1000) {
 
         while (attempts < maxRetries) {
             const result = await object.get(url);
-            // console.log("\n",result);
             if (result.status === 'completed') {
                 console.log("Job completed successfully!");
                 return result;
